@@ -1,0 +1,6 @@
+test: 6767
+
+# 0 = DEFAULT; 1 = VECTOR; 2 = VELOCITY
+arrow_mode: DEFAULT
+
+arrow_hit_multiplier: 5

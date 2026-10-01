@@ -1,0 +1,20 @@
+name: TAC
+version: 1.0.0
+main: me.soymako.tac.TAC
+api-version: "26.3"
+author: "SoyMako"
+
+commands:
+  arrow_mode:
+    description: Cambia el modo en el que se calcula la colision de la flecha con otra entidad
+    usage: /arrow_mode DEFAULT | VECTOR | VELOCITY
+    aliases: [flecha_modo, modo_flecha, mode_arrow, arrowmode]
+  arrow_hit_multiplier:
+    description: cambia el multiplicador de colision
+    usage: /arrow_hit_multiplier <valor:float>
+    aliases:  [hit_multiplier,
+              arrowhitmultiplier,
+              ahm,
+              multiplicador_de_impacto,
+              multiplicadordeimpacto
+    ]
