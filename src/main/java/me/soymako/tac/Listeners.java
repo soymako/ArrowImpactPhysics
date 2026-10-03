@@ -1,22 +1,12 @@
 package me.soymako.tac;
 
-import java.text.BreakIterator;
-
-import org.bukkit.Bukkit;
 import org.bukkit.entity.Arrow;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
-import org.bukkit.entity.Fireball;
-import org.bukkit.entity.Projectile;
-import org.bukkit.entity.WindCharge;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.ProjectileHitEvent;
 import org.bukkit.util.Vector;
-
-import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.format.NamedTextColor;
-import net.kyori.adventure.text.format.TextColor;
 
 public class Listeners implements Listener{
 
@@ -48,6 +38,7 @@ public class Listeners implements Listener{
 
 
         hit.setVelocity(direction.multiply(TAC.instance.getMultiplier()));
+        arrow.setVelocity(new Vector(0,0,0));
         return true;
 
       }
